@@ -11,9 +11,17 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~bootstrap/scss/bootstrap-reboot.scss';
 @import '~bootstrap/scss/bootstrap-utilities.scss';
 
-//fonts
+// reset
+@import './reset';
 
-@import './_fonts';
+//fonts
+@import './fonts';
+
+// variables
+@import './variabile';
+
+// start project
+@import './shared/index';
 
 body {
   font-family: 'Playfair Display', serif;

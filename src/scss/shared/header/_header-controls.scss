@@ -1,0 +1,27 @@
+.header-controls {
+  float: right;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+
+  a {
+    color: $black;
+    font-size: 19px;
+  }
+
+  .header-controls-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .header-controls-search {
+    display: flex;
+  }
+}
