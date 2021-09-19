@@ -1,0 +1,18 @@
+.footer-main {
+  text-align: center;
+
+  .footer-banner-black {
+    background-color: $black;
+    color: $white;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .footer-nav ul {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

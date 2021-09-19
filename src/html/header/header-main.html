@@ -1,6 +1,13 @@
 <div class="header-main">
-  <div class="header-main-content container">
-    <section class="header-contact d-none d-lg-flex">
+  <picture class="header-banner d-none d-lg-block">
+    <img
+      src="images/banners/banner.png"
+      alt="Monochrome"
+    >
+  </picture>
+
+  <div class="header-main-content">
+    <section class="header-contact container d-none d-lg-block">
       <div class="header-social">
         <ul>
           <li>
@@ -49,11 +56,14 @@
       </div>
     </section>
 
-    <section class="header-controls">
-      <div class="header-controls-search">
+    <section class="header-controls  float-lg-right">
+      <div class="header-search-bar d-lg-none">
+      </div>
+      <div class="header-controls-search container">
         <a
           href=""
           title="Meniu"
+          class="d-lg-none"
         >
           <i class="fas fa-bars"></i>
         </a>
@@ -74,7 +84,8 @@
         </form>
       </div>
 
-      <div class="header-controls-content">
+
+      <div class="header-controls-content  container">
         <header class="d-lg-none">
           <h1>Monochrome</h1>
         </header>
@@ -83,22 +94,39 @@
           <li><a
               href=""
               title="User"
-            ><i class="fas fa-user-ninja"></i></a>
+            ><i class="fas fa-user-ninja icon"></i></a>
           </li>
+
           <li>
             <a
               href=""
               title="Wish list"
-            ><i class="fab fa-gratipay"></i></a>
+            ><i class="fab fa-gratipay icon"></i></a>
           </li>
+
           <li>
             <a
               href=""
               title="Cart"
-            ><i class="fas fa-trailer"></i></a>
+            ><i class="fas fa-trailer icon"></i></a>
           </li>
         </ul>
       </div>
+    </section>
+
+    <section class="header-main-banner d-block d-lg-none">
+      <picture class="header-banner-low-res">
+        <img
+          src="images/banners/banner-low-res.jpg"
+          alt="Monochrome"
+        >
+      </picture>
+
+      <a
+        href=""
+        title="New in"
+        class="header-button button button-bnr"
+      >new in</a>
     </section>
   </div>
 </div>

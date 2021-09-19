@@ -1,0 +1,13 @@
+.header-main-banner {
+  position: relative;
+
+  .header-banner-low-res img {
+    width: 100%;
+  }
+
+  .header-button {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+  }
+}

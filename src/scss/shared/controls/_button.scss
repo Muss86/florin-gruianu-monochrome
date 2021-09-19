@@ -1,0 +1,21 @@
+.button-bnr {
+  background-color: $white;
+  text-decoration: none;
+  color: $black;
+  display: inline-block;
+  text-align: center;
+  padding: 4px 15px;
+  text-transform: uppercase;
+  border: 1px solid $black;
+  font-size: 10px;
+  font-family: 'Roboto', serif;
+  font-weight: normal;
+  transition: color 0.2s linear, background-color 0.3s linear,
+    font-weight 0.2s linear;
+
+  &:hover {
+    color: $white;
+    background-color: transparent;
+    font-weight: bold;
+  }
+}
