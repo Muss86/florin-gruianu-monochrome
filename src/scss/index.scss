@@ -22,6 +22,8 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 // start project
 @import './shared/index';
+@import './catalog/index';
+@import './home/index';
 
 body {
   font-family: 'Playfair Display', serif;

@@ -1,0 +1,31 @@
+.home-marketing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .home-marketing-picture img {
+    display: block;
+    width: 100%;
+  }
+
+  .home-marketing-generic {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+      margin: 20px 0;
+      h1 {
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+  }
+}

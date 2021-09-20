@@ -1,0 +1,35 @@
+.product-tile {
+  margin-bottom: 40px;
+
+  .product-tile-image {
+    position: relative;
+    margin-bottom: 24px;
+
+    img {
+      width: 100%;
+    }
+
+    .product-tile-heart {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+  }
+  .product-tile-info {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  .product-tile-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  .product-price-regular {
+    font-size: 15px;
+    font-weight: normal;
+  }
+}

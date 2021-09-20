@@ -1,4 +1,4 @@
-.button-bnr {
+.button {
   background-color: $white;
   text-decoration: none;
   color: $black;
@@ -12,10 +12,13 @@
   font-weight: normal;
   transition: color 0.2s linear, background-color 0.3s linear,
     font-weight 0.2s linear;
+}
+.button-bnr:hover {
+  color: $white;
+  background-color: transparent;
+  font-weight: bold;
+}
 
-  &:hover {
-    color: $white;
-    background-color: transparent;
-    font-weight: bold;
-  }
+.button-news:hover {
+  font-weight: bold;
 }

@@ -1,0 +1,16 @@
+.home-catalog-preview {
+  margin-top: 20px;
+
+  .home-catalog-preview-content {
+    border-top: 1px solid $gray-secondary;
+
+    header {
+      margin: 10px 0;
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+}
