@@ -19,6 +19,10 @@
   font-weight: bold;
 }
 
-.button-news:hover {
-  font-weight: bold;
+.button-news {
+  background-color: transparent;
+
+  &:hover {
+    font-weight: bold;
+  }
 }
