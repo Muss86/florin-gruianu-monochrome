@@ -6,6 +6,7 @@
 
     header {
       margin: 10px 0;
+
       h1 {
         text-align: center;
         font-weight: bold;
@@ -14,13 +15,17 @@
     }
   }
 
-  // .product-tile {
-  //   @include media-breakpoint-up('lg') {
-  //     width: 23.6725%;
+  .product-tile-list {
+    padding: 0;
 
-  //     .product-tile-image img {
-  //       width: auto;
-  //     }
-  //   }
-  // }
+    .product-tile {
+      @include media-breakpoint-up('lg') {
+        width: 23.6725%;
+
+        .product-tile-image img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

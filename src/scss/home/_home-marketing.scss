@@ -1,7 +1,4 @@
 .home-marketing {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 30px;
 
   .home-marketing-picture img {
@@ -15,8 +12,25 @@
     flex-direction: column;
     align-items: center;
 
-    header {
+    @include media-breakpoint-up('lg') {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 556px;
+    }
+
+    .header-marketing-tile {
       margin: 20px 0;
+
+      @include media-breakpoint-up('lg') {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 33px;
+        margin-bottom: 20px;
+        text-align: right;
+        margin-bottom: 40px;
+      }
+
       h1 {
         font-weight: bold;
         font-size: 18px;
@@ -26,6 +40,20 @@
     p {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
+
+      @include media-breakpoint-up('lg') {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+
+        text-align: left;
+      }
+
+      & > p {
+        @include media-breakpoint-up('lg') {
+          margin-bottom: 40px;
+        }
+      }
     }
   }
 }

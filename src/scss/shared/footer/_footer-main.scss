@@ -1,117 +1,187 @@
 .footer-main {
   text-align: center;
 
-  .footer-connect-banner {
+  @include media-breakpoint-up('lg') {
     background-color: $gray-primary;
-    color: $black;
+    text-align: left;
+    // padding: 10px;
+  }
 
-    a {
+  .footer-main-content {
+    padding: 0;
+
+    .footer-connect-banner {
+      background-color: $gray-primary;
       color: $black;
-      text-decoration: underline;
+
+      @include media-breakpoint-up('lg') {
+        background-color: transparent;
+      }
+
+      a {
+        color: $black;
+        text-decoration: underline;
+      }
+
+      .footer-neswletter {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+
+        h1 {
+          font-family: 'Playfair Display', serif;
+          font-size: 22px;
+          font-weight: normal;
+          padding: 20px 0 15px 0;
+        }
+
+        label {
+          font-size: 15px;
+
+          @include media-breakpoint-up('lg') {
+            color: $black;
+            font-size: 22px;
+            color: $brand-primary;
+            font-family: 'Playfair Display', serif;
+            font-weight: normal;
+          }
+        }
+
+        input {
+          margin: 10px;
+          width: 50%;
+
+          @include media-breakpoint-up('lg') {
+            margin: 5px 0;
+            width: 100%;
+          }
+        }
+
+        button {
+          border: 1px solid $black;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+        }
+      }
+
+      .footer-social {
+        margin-top: 20px;
+        font-size: 22px;
+
+        @include media-breakpoint-up('lg') {
+          margin: 0;
+        }
+
+        h1 {
+          font-weight: normal;
+          font-size: 22px;
+          margin-bottom: 15px;
+        }
+
+        ul {
+          padding-bottom: 15px;
+
+          @include media-breakpoint-up('lg') {
+            padding-bottom: 0;
+          }
+
+          li {
+            margin-right: 15px;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
     }
 
-    .footer-neswletter {
-      font-family: 'Roboto', sans-serif;
-      font-size: 12px;
-      font-weight: normal;
+    .footer-nav {
+      background-color: $gray-secondary;
 
-      h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 22px;
-        font-weight: normal;
-        padding: 20px 0 15px 0;
-      }
-
-      label {
-        font-size: 15px;
-      }
-
-      input {
-        margin: 10px;
-        width: 50%;
-      }
-
-      button {
-        border: 1px solid $black;
-        margin-bottom: 10px;
-        text-transform: uppercase;
+      @include media-breakpoint-up('lg') {
+        background-color: transparent;
       }
     }
 
-    .footer-social {
-      margin-top: 20px;
-      font-size: 22px;
+    .footer-nav-content {
+      margin: 0;
 
       h1 {
         font-weight: normal;
         font-size: 22px;
-        margin-bottom: 15px;
+        color: $white;
+        margin: 33px 0;
       }
 
-      ul {
-        padding-bottom: 15px;
+      & > ul {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+        margin: 0 10px;
+
+        @include media-breakpoint-up('lg') {
+          align-items: start;
+        }
+
+        &:first-of-type {
+          border-right: 1px solid $white;
+          padding-right: 30px;
+
+          @include media-breakpoint-up('lg') {
+            border: none;
+            padding-right: 150px;
+          }
+        }
 
         li {
-          margin-right: 15px;
-        }
+          margin-bottom: 10px;
 
-        &:last-of-type {
-          margin-right: 0;
+          @include media-breakpoint-up('lg') {
+            margin: 0;
+          }
+
+          a {
+            color: $white;
+            font-family: 'Roboto', sans-serif;
+
+            @include media-breakpoint-up('lg') {
+              color: $black;
+              text-align: left;
+              font-size: 22px;
+              color: $brand-primary;
+              font-family: 'Playfair Display', serif;
+              font-weight: normal;
+            }
+          }
         }
       }
-    }
-  }
 
-  .footer-nav-banner {
-    background-color: $gray-secondary;
-    width: 100%;
-    height: 364px;
-    position: relative;
-  }
-
-  .footer-nav-content {
-    position: absolute;
-    margin: 0;
-
-    h1 {
-      font-weight: normal;
-      font-size: 22px;
-      color: $white;
-      margin: 33px 0;
-    }
-
-    & > ul {
-      display: inline-flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      color: $white;
-      margin: 0 10px;
-
-      &:first-of-type {
-        border-right: 1px solid $white;
-        padding-right: 30px;
-      }
-
-      li {
-        margin-bottom: 10px;
-
+      .footer-terms {
+        margin: 25px 0;
         a {
-          color: $white;
           font-family: 'Roboto', sans-serif;
+          font-style: italic;
+          font-weight: 300;
+          font-size: 14px;
+          color: $white;
+          text-decoration: underline;
         }
       }
     }
 
-    .footer-terms {
-      margin: 25px 0;
+    .footer-contact {
+      padding-left: 12px;
+
+      ul,
       a {
-        font-family: 'Roboto', sans-serif;
-        font-style: italic;
-        font-weight: 300;
-        font-size: 14px;
-        color: $white;
-        text-decoration: underline;
+        color: $black;
+        font-size: 22px;
+        color: $brand-primary;
+        font-family: 'Playfair Display', serif;
+        font-weight: normal;
       }
     }
   }
