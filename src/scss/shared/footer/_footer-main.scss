@@ -1,5 +1,6 @@
 .footer-main {
   text-align: center;
+  padding: 25px 0;
 
   @include media-breakpoint-up('lg') {
     background-color: $gray-primary;
@@ -52,7 +53,7 @@
           width: 50%;
 
           @include media-breakpoint-up('lg') {
-            margin: 5px 0;
+            margin: 10px 0;
             width: 100%;
           }
         }

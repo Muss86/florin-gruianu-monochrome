@@ -1,7 +1,17 @@
 .header-nav {
+  background-color: $brand-primary;
+
   ul {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+
+    a {
+      font-size: 19px;
+      text-transform: uppercase;
+      color: $gray-primary;
+      font-weight: normal;
+    }
   }
 }

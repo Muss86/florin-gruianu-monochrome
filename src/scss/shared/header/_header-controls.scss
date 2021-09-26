@@ -1,21 +1,51 @@
 .header-main {
-  // position: relative;
+  @include media-breakpoint-up('lg') {
+    background: url('../images/banners/banner.png');
+    height: 500px;
+    width: 100%;
+    position: relative;
+  }
+
+  .header-contact {
+    position: absolute;
+    top: 43px;
+    left: 421px;
+
+    li {
+      margin-right: 30px;
+    }
+
+    a {
+      color: $white;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
 
   .header-banner img {
     width: 100%;
   }
 
-  // .header-main-content {
-  //   position: absolute;
-  //   top: 10px;
-
   .header-controls {
-    // float: right;
     display: flex;
     flex-direction: column-reverse;
 
+    @include media-breakpoint-up('lg') {
+      position: absolute;
+      top: 43px;
+      right: 421px;
+    }
+
+    li {
+      margin: 0 auto;
+    }
+
     a {
       color: $black;
+
+      @include media-breakpoint-up('lg') {
+        margin-left: 30px;
+      }
     }
 
     .header-search-bar {
@@ -31,6 +61,12 @@
       justify-content: space-between;
       align-items: center;
       position: absolute;
+
+      @include media-breakpoint-up('lg') {
+        width: auto;
+        max-width: initial;
+        position: initial;
+      }
 
       & > a {
         font-size: 30px;
@@ -62,6 +98,10 @@
           background-color: transparent;
           color: $white;
           font-weight: 300;
+
+          @include media-breakpoint-up('lg') {
+            color: $black;
+          }
         }
       }
     }

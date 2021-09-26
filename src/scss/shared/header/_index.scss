@@ -1,6 +1,10 @@
 .header {
   margin-top: 20px;
   text-align: center;
+
+  @include media-breakpoint-up('lg') {
+    margin-top: 0;
+  }
 }
 
 @import './header-contact';
